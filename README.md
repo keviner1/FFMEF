@@ -4,6 +4,11 @@ Official PyTorch implementation of our CVPRW2023 paper: Efficient Multi-exposure
 **We provide a simple training and testing process as follows:**
 
 -------------------------------------------------
+**Dependencies**
+* Python 3.8
+* PyTorch 1.10.0+cu113
+
+-------------------------------------------------
 **Train**
 
 The datasets samples are placed in *images\dataset* (including MEFB[1], MFIF[2], VIFB[3], and SICE[4])
