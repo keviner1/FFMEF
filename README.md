@@ -3,7 +3,7 @@ Official PyTorch implementation of our CVPRW2023 paper: Efficient Multi-exposure
 **We provide a simple training and testing process as follows:**
 
 -------------------------------------------------
-> Train
+**Train**
 
 The datasets samples are placed in *images\dataset* (including MEFB[1], MFIF[2], VIFB[3], and SICE[4])
 
@@ -20,7 +20,7 @@ python train.py --config 2
 python train.py --config 3
 
 -------------------------------------------------
-> Test
+**Test**
 
 The pretrained models are placed in *ckp*
 
@@ -39,7 +39,8 @@ python test.py --config 3 --ckp vif.pth
 -------------------------------------------------
 Finally, the fused results can be found in *images\fused*
 
-> Reference
+-------------------------------------------------
+**Reference**
 
 [1] Zhang X. Benchmarking and comparing multi-exposure image fusion algorithms[J]. Information Fusion, 2021, 74: 111-131.
 
