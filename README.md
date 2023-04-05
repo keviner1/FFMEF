@@ -46,6 +46,10 @@ python test.py --config 3 --ckp vif.pth
 Finally, the fused results can be found in *images\fused*
 
 -------------------------------------------------
+**Results**
+![show](https://github.com/keviner1/imgs/blob/main/FFMEF-comp.png?raw=true)
+
+-------------------------------------------------
 **Reference**
 
 [1] Zhang X. Benchmarking and comparing multi-exposure image fusion algorithms[J]. Information Fusion, 2021, 74: 111-131.
