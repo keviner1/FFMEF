@@ -26,6 +26,7 @@ python train.py --config 2
 python train.py --config 3
 
 Then, the checkpoints and log file are saved in *output*.
+
 -------------------------------------------------
 **Test**
 
