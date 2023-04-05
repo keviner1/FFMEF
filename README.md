@@ -11,7 +11,7 @@ Official PyTorch implementation of our CVPRW2023 paper: Efficient Multi-exposure
 -------------------------------------------------
 **Train**
 
-The datasets samples are placed in *images\dataset* (including MEFB[1], MFIF[2], VIFB[3], and SICE[4])
+The datasets samples are placed in *images\dataset* (including MEFB[1], MFIF[2], VIFB[3], and SICE[4]).
 
 > Multi-Exposure Image Fusion (MEF)
 
@@ -25,10 +25,11 @@ python train.py --config 2
 
 python train.py --config 3
 
+Then, the checkpoints and log file are saved in *output*.
 -------------------------------------------------
 **Test**
 
-The pretrained models are placed in *ckp*
+The pretrained models are placed in *ckp*.
 
 > MEF
 
@@ -43,7 +44,7 @@ python test.py --config 2 --ckp mff.pth
 python test.py --config 3 --ckp vif.pth
 
 -------------------------------------------------
-Finally, the fused results can be found in *images\fused*
+Finally, the fused results can be found in *images\fused*.
 
 -------------------------------------------------
 **Results**
