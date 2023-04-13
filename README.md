@@ -9,7 +9,11 @@ Official PyTorch implementation of our CVPRW2023 paper: Efficient Multi-exposure
 
 -------------------------------------------------
 **Results**
+
+*multi-exposure fusion*
 ![show](https://github.com/keviner1/imgs/blob/main/FFMEF-comp.png?raw=true)
+
+*multi-focus fusion  &  visible-infrared fusion*
 ![show](https://github.com/keviner1/imgs/blob/main/FFMEF-comp2.png?raw=true)
 
 -------------------------------------------------
