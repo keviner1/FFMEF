@@ -10,6 +10,7 @@ Official PyTorch implementation of our CVPRW2023 paper: Efficient Multi-exposure
 -------------------------------------------------
 **Results**
 ![show](https://github.com/keviner1/imgs/blob/main/FFMEF-comp.png?raw=true)
+![show](https://github.com/keviner1/imgs/blob/main/FFMEF-comp2.png?raw=true)
 
 -------------------------------------------------
 **We provide a simple training and testing process as follows:**
