@@ -1,6 +1,15 @@
 Official PyTorch implementation of our CVPRW2023 paper: Efficient Multi-exposure Image Fusion via Filter-dominated Fusion and Gradient-driven Unsupervised Learning.
 
 -------------------------------------------------
+**Frameworks**
+![show](https://github.com/keviner1/imgs/blob/main/FFMEF-model.png?raw=true)
+![show](https://github.com/keviner1/imgs/blob/main/FFMEF-loss.png?raw=true)
+
+-------------------------------------------------
+**Results**
+![show](https://github.com/keviner1/imgs/blob/main/FFMEF-comp.png?raw=true)
+
+-------------------------------------------------
 **We provide a simple training and testing process as follows:**
 
 -------------------------------------------------
@@ -46,10 +55,6 @@ python test.py --config 3 --ckp vif.pth
 
 -------------------------------------------------
 Finally, the fused results can be found in *images\fused*.
-
--------------------------------------------------
-**Results**
-![show](https://github.com/keviner1/imgs/blob/main/FFMEF-comp.png?raw=true)
 
 -------------------------------------------------
 **Reference**
