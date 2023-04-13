@@ -3,13 +3,9 @@ Official PyTorch implementation of our CVPRW2023 paper: Efficient Multi-exposure
 -------------------------------------------------
 **Frameworks**
 
-*FFMEF*
+*FFMEF* *GIFloss*
 
-<img src="https://github.com/keviner1/imgs/blob/main/FFMEF-model.png?raw=true" width="600px">
-
-*GIFloss*
-
-<img src="https://github.com/keviner1/imgs/blob/main/FFMEF-loss.png?raw=true" width="350px">
+<img src="https://github.com/keviner1/imgs/blob/main/FFMEF-model.png?raw=true" width="600px"> <img src="https://github.com/keviner1/imgs/blob/main/FFMEF-loss.png?raw=true" width="350px">
 
 -------------------------------------------------
 **Results**
