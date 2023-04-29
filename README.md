@@ -65,7 +65,6 @@ Finally, the fused results can be found in *images\fused*.
 
 -------------------------------------------------
 **Citation**
-If this work is helpful to you, please cite it as:
 
 ```
 @inproceedings{zheng2023ffmef,
