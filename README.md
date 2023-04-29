@@ -69,7 +69,7 @@ Finally, the fused results can be found in *images\fused*.
 ```
 @inproceedings{zheng2023ffmef,
   title={Efficient Multi-exposure Image Fusion via Filter-dominated Fusion and Gradient-driven Unsupervised Learning},
-  author={Kaiwen Zheng, Jie Huang, Hu Yu, Feng Zhao},
+  author={Zheng, Kaiwen and Huang, Jie and Yu, Hu and Zhao, Feng},
   booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops},
   year={2023}
 }
