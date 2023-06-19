@@ -1,4 +1,5 @@
 Official PyTorch implementation of our CVPRW2023 paper: Efficient Multi-exposure Image Fusion via Filter-dominated Fusion and Gradient-driven Unsupervised Learning.
+[Paper link](https://openaccess.thecvf.com/content/CVPR2023W/MIPI/papers/Zheng_Efficient_Multi-Exposure_Image_Fusion_via_Filter-Dominated_Fusion_and_Gradient-Driven_Unsupervised_CVPRW_2023_paper.pdf)
 
 -------------------------------------------------
 **Frameworks**
