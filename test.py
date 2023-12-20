@@ -30,7 +30,11 @@ import cv2
 
 def save(img,path,suf,flag,mode,ckp):
     cnt = path
-    img = img.squeeze(0).cpu().numpy().transpose(1, 2, 0).squeeze()
+    #img = img.squeeze(0).cpu().numpy().transpose(1, 2, 0).squeeze()
+
+    img = img.permute([0, 2, 3, 1]).cpu().detach().numpy()
+    img = np.squeeze(img)
+    
     img = np.uint8(img)
     img = img.astype(np.uint8)
     save_img = Image.fromarray(img, mode)#
