@@ -65,7 +65,7 @@ def run(args, ckp):
     sampler_test = torch.utils.data.SequentialSampler(dataset_test)
     dataloader_val = DataLoader(dataset_test, batch_size=1,sampler=sampler_test, num_workers=1,pin_memory=True)
 
-    start = time.time()
+    gap = 0
     with torch.no_grad():
         for _, samples in enumerate(dataloader_val):
             img0_RGB = samples[0]['img0_RGB'].cuda()
@@ -80,6 +80,7 @@ def run(args, ckp):
             img0_Cr = samples[0]['img0_Cr'].cuda()
             
             #===========================================================================
+            start = time.time()
             fus_Y = model(img0_RGB = None, img0_Y = img0_Y, img1_RGB = None, img1_Y = img1_Y)
             fus_Y = fus_Y.clamp(0,1)
 
@@ -90,12 +91,14 @@ def run(args, ckp):
             elif args.DATA.task == "VIF":
                 fus_RGB = myUtils.YCbCr2RGB_torch(fus_Y*255,img1_Cb*255,img1_Cr*255)      #B C H W, 255
 
-            save(img0_RGB*255.0,samples[1][0],samples[2][0],"I0RGB","RGB",ckp)
-            save(img1_RGB*255.0,samples[1][0],samples[2][0],"I1RGB","RGB",ckp)
+            gap = gap + round(end * 1000) - round(start * 1000)
+            
+            #save(img0_RGB*255.0,samples[1][0],samples[2][0],"I0RGB","RGB",ckp)
+            #save(img1_RGB*255.0,samples[1][0],samples[2][0],"I1RGB","RGB",ckp)
             save(fus_RGB,samples[1][0],samples[2][0],"FFMEF","RGB",ckp)
             
     end = time.time()
-    gap = round(end * 1000) - round(start * 1000)
+    
     print(f"time_avg: {gap/n:.4f}ms")
 
 
