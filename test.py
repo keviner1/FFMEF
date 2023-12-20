@@ -90,7 +90,7 @@ def run(args, ckp):
                 fus_RGB = myUtils.YCbCr2RGB_torch(fus_Y*255,fus_Cb,fus_Cr)
             elif args.DATA.task == "VIF":
                 fus_RGB = myUtils.YCbCr2RGB_torch(fus_Y*255,img1_Cb*255,img1_Cr*255)      #B C H W, 255
-
+            end = time.time()
             gap = gap + round(end * 1000) - round(start * 1000)
             
             #save(img0_RGB*255.0,samples[1][0],samples[2][0],"I0RGB","RGB",ckp)
