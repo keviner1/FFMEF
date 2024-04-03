@@ -12,10 +12,8 @@ _C = CN()
 _C.SERVER = CN()
 _C.SERVER.gpus = 1
 # train on SICE
-# _C.SERVER.TRAIN_DATA = 'images/dataset/MEF/SICE/Train'
-# _C.SERVER.VAL_DATA = 'images/dataset/MEF/SICE/Test'
-_C.SERVER.TRAIN_DATA = 'images/dataset/MEF/MEFB'
-_C.SERVER.VAL_DATA = 'images/dataset/MEF/MEFB'
+_C.SERVER.TRAIN_DATA = 'images/dataset/MEF/SICE/Train'
+_C.SERVER.VAL_DATA = 'images/dataset/MEF/SICE/Test'
 _C.SERVER.TEST_DATA = 'images/dataset/MEF/MEFB'
 _C.SERVER.OUTPUT = 'output/job1'
 _C.SERVER.train_len = 888888
